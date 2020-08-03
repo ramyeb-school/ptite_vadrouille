@@ -1,0 +1,228 @@
+    @import "general.css";
+    @import "header.css";
+    body {
+        background-color: black;
+        overflow: hidden;
+    }
+    /* video {
+        position: absolute;
+        top: 0;
+        height: 120vh;
+        opacity: 0.5;
+        margin: auto;
+    }
+     */
+    
+    footer {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--secondary-color);
+        clip-path: polygon(0vh 100vh, 100vw 100vh, 100vw 80vh, 0vh 90vh);
+        float: bottom;
+    }
+    
+    #france-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70vh;
+        height: 70vh;
+        margin-right: 10vw;
+        margin-bottom: 6vh;
+        -webkit-filter: drop-shadow(5px 5px 5px black);
+        filter: drop-shadow(0px 0px 8px black);
+    }
+    
+    video {
+        position: fixed;
+        opacity: 0.4;
+        z-index: -1;
+    }
+    
+    @media (min-aspect-ratio: 16/9) {
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-aspect-ratio: 16/9) {
+        video {
+            width: auto;
+            height: 100%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        video {
+            display: none;
+            background-size: cover;
+        }
+        body {
+            background-color: var(--secondary-color);
+        }
+    }
+    
+    nav {
+        position: fixed !important;
+        width: 100% !important;
+    }
+    
+    #titre {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        font-size: 5em;
+        font-weight: 700;
+        margin-left: 8vw;
+        text-shadow: 0px 0px 10px black;
+        color: white;
+        width: 12em;
+    }
+    
+    #mot {
+        display: inline-block;
+    }
+    
+    #mot span {
+        position: absolute;
+        overflow: hidden;
+        animation: animate 22s linear infinite;
+        opacity: 0;
+        top: 50%;
+    }
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        1% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        11% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        12% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+    }
+    
+    #mot span:nth-child(1) {
+        animation-delay: calc(2.4*0s);
+    }
+    
+    #mot span:nth-child(2) {
+        animation-delay: calc(2.4*1s);
+    }
+    
+    #mot span:nth-child(3) {
+        animation-delay: calc(2.4*2s);
+    }
+    
+    #mot span:nth-child(4) {
+        animation-delay: calc(2.4*3s);
+    }
+    
+    #mot span:nth-child(5) {
+        animation-delay: calc(2.4*4s);
+    }
+    
+    #mot span:nth-child(6) {
+        animation-delay: calc(2.4*5s);
+    }
+    
+    #mot span:nth-child(7) {
+        animation-delay: calc(2.4*6s);
+    }
+    
+    #mot span:nth-child(8) {
+        animation-delay: calc(2.4*7s);
+    }
+    
+    #mot span:nth-child(9) {
+        animation-delay: calc(2.4*8s);
+    }
+    
+    #mot span:nth-child(10) {
+        animation-delay: calc(2.4*9s);
+    }
+    
+    @media screen and (min-width: 3000px) {
+        #titre {
+            font-size: 10em;
+        }
+        #france-img {
+            width: 65vh;
+            height: 65vh;
+        }
+    }
+    
+    @media screen and (max-width: 1900px) {
+        #titre {
+            font-size: 4.7em;
+        }
+        #france-img {
+            width: 65vh;
+            height: 65vh;
+        }
+    }
+    
+    @media screen and (max-width: 1840px) {
+        #titre {
+            font-size: 4.5em;
+        }
+        #france-img {
+            width: 65vh;
+            height: 65vh;
+        }
+    }
+    
+    @media screen and (max-width: 1770px) {
+        #titre {
+            font-size: 4.5em;
+        }
+        #france-img {
+            width: 63vh;
+            height: 63vh;
+        }
+    }
+    
+    @media screen and (max-width: 1650px) {
+        #titre {
+            font-size: 4em;
+        }
+        #france-img {
+            width: 55vh;
+            height: 55vh;
+        }
+    }
+    
+    @media screen and (max-width: 1280px) {
+        #titre {
+            font-size: 4.7em;
+        }
+        #france-img {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 990px) {
+        #titre {
+            font-size: 3em;
+        }
+    }
+    
+    @media screen and (max-width: 520px) {
+        #titre {
+            font-size: 2em;
+            width: 400px;
+        }
+    }

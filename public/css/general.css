@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+* {
+    --primary-color: blue;
+    --secondary-color: #BC002D;
+    /* --secondary-color: #5e0b15; */
+    --secondary-color-active: #90323d;
+    --third-color: #ffffff;
+    --fourth-color: #555555;
+}
+
+.transition-fade {
+    transition: 0.2s;
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateY(-25%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateY(25%);
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    border-color: var(--secondary-color) !important;
+}
+
+
+/* WHO TO USE */
+
+
+/* element {
+    background-color: var(--main-bg-color);
+  } */

@@ -1,0 +1,188 @@
+@import "general.css";
+
+/* GENERAL */
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.progress,
+.progress-bar {
+    height: 25px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color) !important;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+
+/* BODY */
+
+#entete {
+    text-align: center;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+
+#entete h3 {
+    max-width: max-content;
+    color: white;
+    font-size: 95px;
+    font-weight: 700;
+    padding: 0;
+    margin: auto;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#entete #underline {
+    background-color: white;
+    width: 500px;
+    height: 30px;
+    box-shadow: 0px 10px 20px -11px black;
+}
+
+@media (max-width: 1200px) {
+    #entete h3 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    #entete h3 {
+        font-size: 50px;
+    }
+    #entete #underline {
+        width: 300px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 766px) {
+    #entete #underline {
+        display: none;
+    }
+}
+
+
+/* PODIUM */
+
+.podium-container {
+    margin-bottom: 100px;
+}
+
+.podium {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#podium-deux,
+#podium-un,
+#podium-trois {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.podium h3 {
+    margin: 0;
+    text-align: center;
+    height: 60px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.marche {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-shadow: 0px 10px 20px -11px black;
+}
+
+#podium-un .marche {
+    box-shadow: 0px 0px 30px 0px yellow;
+    position: relative;
+}
+
+.marche p {
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#podium-deux .marche p {
+    font-size: 35px;
+}
+
+#podium-un .marche p {
+    font-size: 50px;
+}
+
+#podium-trois .marche p {
+    font-size: 25px;
+}
+
+.marche p {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+#podium-deux .marche {
+    height: 65px;
+}
+
+#podium-un .marche {
+    height: 100px;
+}
+
+#podium-trois .marche {
+    height: 40px;
+}
+
+
+/* TABLEAU */
+
+#squeletteTable {
+    background-color: white;
+    border-radius: 25px;
+    height: max-content;
+    padding: 15px 10px;
+    box-shadow: 0px 0px 20px -11px black;
+    margin-bottom: 50px;
+}
+
+#first-tr th {
+    border: none;
+}
+
+#first-tr td {
+    border: none;
+}
+
+#squeletteTable .name {
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#squeletteTable .photo {
+    width: 5px;
+    vertical-align: middle;
+}
+
+#squeletteTable .progression {
+    width: 70%;
+    vertical-align: middle;
+}

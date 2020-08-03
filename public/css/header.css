@@ -1,0 +1,17 @@
+@import "general.css";
+.navbar a {
+    color: white !important;
+}
+
+.navbar-text li {
+    margin: 0px 30px;
+}
+
+.navbar-text li a:hover {
+    background-color: var(--secondary-color) !important;
+    border-radius: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}

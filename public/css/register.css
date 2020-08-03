@@ -1,0 +1,107 @@
+@import "general.css";
+body {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+video {
+    position: fixed;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/* @media (max-width: 767px) {
+    video {
+        display: none;
+        background-size: cover;
+    }
+    body {
+        background-color: var(--secondary-color);
+    }
+} */
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.vertical-center {
+    min-height: 80vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.register .card-header {
+    background-color: var(--third-color);
+    border: 0;
+}
+
+.register .card-header h3 {
+    margin: 20px 0px 2px 0px;
+    font-weight: 300;
+}
+
+.register .card-body {
+    padding: 15px 0px;
+}
+
+.register .row div {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 330px) {}
+
+.register a {
+    width: max-content;
+    margin-top: 15px;
+    color: var(--secondary-color) !important;
+    padding: 0;
+    text-overflow: fade(10px);
+}
+
+.register a:hover {
+    color: var(--secondary-color-active) !important;
+}
+
+.register input.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 0;
+    padding: 10px 50px;
+    background-color: var(--secondary-color);
+}
+
+.register input.btn:active,
+.register input.btn:hover {
+    border: 0;
+    background-color: var(--secondary-color-active);
+}
+
+.register input.form-control {
+    background-color: rgba(150, 150, 150, 0.1);
+    border-radius: 15px;
+}
+
+.register input.form-control:focus {
+    background-color: rgba(150, 150, 150, 0.1);
+}
